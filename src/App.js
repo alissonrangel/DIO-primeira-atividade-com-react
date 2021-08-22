@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Item from './components/Item';
+import Card from './components/Card';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1>Minha Aplicação com React</h1>
+      <p>Eu sou um parágrafo</p>
+      <ul style={{marginLeft: 0, padding:0}}>        
+        <Item texto="Item 1" />
+        <Item texto="Item 2" />
+        <Item>Item 3</Item>
+      </ul>
+      <Card />      
+    </>
+  )
 }
 
 export default App;
